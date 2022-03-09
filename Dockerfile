@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 RUN apt-get update
-RUN apt-get install curl -y
+RUN apt-get install curl jq -y
 RUN curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.19.0/bin/linux/amd64/kubectl
 RUN chmod +x ./kubectl
 RUN mv ./kubectl /usr/local/bin/kubectl
