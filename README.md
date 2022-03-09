@@ -1,4 +1,4 @@
-# Rancher-cli2
+# Rancher-cli
 
 ## Description 
 Base on ubuntu:18.04 image, install rancher-cli (rancher-linux-amd64-v2.4.6.tar.gz) and kubectl (v1.19.0) command. It can be used on Rancher-pipline.yaml.
@@ -28,7 +28,7 @@ stages:
 <pre><code>
 + rancher login https://xxx.xxx.xxx.xxx/ -t ******** --skip-verify
 time="2020-09-23T06:54:17Z" level=info msg="Only 1 project available: Default"
-time="2020-09-23T06:54:17Z" level=info msg="Saving config to /root/.rancher/cli2.json"
+time="2020-09-23T06:54:17Z" level=info msg="Saving config to /root/.rancher/cli.json"
 + rancher kubectl get all
 NAME                                             READY   STATUS             RESTARTS   AGE
 pod/buildpod.pipeline-p-j79qn-48.1-s9g4g-2lz2h   4/4     Running            0          46s
